@@ -1,7 +1,7 @@
 import { Component, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { AccordionModule } from 'ngx-bootstrap/accordion'; 
 import { CommonModule } from '@angular/common';
 
 @Component({

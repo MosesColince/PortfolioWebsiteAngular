@@ -1,39 +1,44 @@
 <div class="container">
   <div class="row">
+    <!-- About Me -->
     <div class="col-lg shadow border m-1">
       <div class="text-center">
-        <! -- About me -- />
         <h2>About Me</h2>
         <img
           src="assets/IMG_20240908_134742.jpg"
-          alt="Profile Pic"
+          alt="Sithomola Mushe's profile picture"
           width="256"
           height="256"
           class="rounded-circle"
         />
         <p>
-          I am Sithomola Mushe. I am currently an intern at CodeTribe completing
-          my software Development cource
+          I am Sithomola Mushe, currently an intern at CodeTribe, completing my
+          software development course.
         </p>
       </div>
     </div>
-    <! --Featured projects --/>
+
+    <!-- Featured Projects -->
     <div class="col-lg shadow border m-1">
       <div class="text-center">
         <h2>Featured Projects</h2>
         <h4>{{ featuredProject.name }}</h4>
       </div>
-      <carousel>
-        <div *ngFor="let picture of featuredProject.pictures">
+      <carousel *ngIf="featuredProject.pictures && featuredProject.pictures.length">
+        <div *ngFor="let picture of featuredProject.pictures" class="carousel-item">
           <img
             [src]="picture"
-            alt="{{ featuredProject.name }}"
+            alt="{{ featuredProject.name }} image"
             style="display: block; width: 100%"
+            loading="lazy"
           />
         </div>
       </carousel>
-      <p class="mt-2">{{featuredProject.summary}}</p>
-      <p>Visit the Portfolio secrion for more infromation</p>
+      <p class="mt-2">{{ featuredProject.summary }}</p>
+      <p>
+        Visit the <a routerLink="/portfolio">Portfolio</a> section for more
+        information.
+      </p>
     </div>
   </div>
 </div>

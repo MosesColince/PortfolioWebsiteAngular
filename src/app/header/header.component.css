@@ -1,4 +1,20 @@
+
 .define-owner {
-    padding: 2rem 1rem;
-    background-color: #adc0d3;
-}
+    background-color: #dde6e837; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .owner-name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  .social-links a img {
+    transition: transform 0.3s ease;
+  }
+  .social-links a img:hover {
+    transform: scale(1.2);
+  }
+  

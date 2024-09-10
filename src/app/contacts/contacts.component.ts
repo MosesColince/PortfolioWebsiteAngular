@@ -14,7 +14,7 @@ export class ContactsComponent {
     this.titleService.setTitle('SithomolaMushe - Contacts');
   }
 
-  // Method to copy email address to clipboard
+
   copyEmail() {
     const email = 'mosescolince161@gmail.com';
     navigator.clipboard.writeText(email).then(() => {
